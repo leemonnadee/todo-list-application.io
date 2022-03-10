@@ -1,0 +1,223 @@
+/* Include the padding and border in an element's total width and height */
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+body {
+  background-color: #B5AAA9;
+}
+
+/* Remove margins and padding from the list */
+ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+/* Style the list items */
+ul li {
+  width: auto;
+  list-style: none;
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  background: #e0e0e0;
+  font-size: 18px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  margin-top: 5px;
+  border-radius: 5px;
+  /* make the list items unselectable */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Set all odd list items to a different color (zebra-stripes) */
+ul li:nth-child(odd) {
+  background: #f9f9f9;
+}
+
+ul li:hover {
+  -webkit-transition: width 2s;
+  transition: width 2s;
+  -webkit-transition: background-color 0.5s ease;
+  transition: background-color 0.5s ease;
+  background: rgba(90, 21, 21, 0.3);
+}
+
+ul li.checked {
+  background: #888;
+  color: #fff;
+  text-decoration: line-through;
+}
+
+ul li.checked::before {
+  content: '';
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
+.listcont {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* Style the close button */
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+  background-color: rgba(255, 0, 0, 0.5);
+  color: white;
+  border-radius: 10px;
+}
+
+#particles-js {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  z-index: -9;
+}
+
+/* Style the header */
+.container {
+  padding-top: 150px;
+  gap: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.title {
+  height: 50px;
+  width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: red;
+}
+
+.header {
+  background: #e0e0e0;
+  border-radius: 10px;
+  padding: 30px 40px;
+  color: #e0e0e0;
+  width: 50%;
+  text-align: center;
+  font-weight: 600;
+  background-image: url(../src/bg.gif);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.header h2 {
+  -webkit-animation: pulse 2s infinite;
+          animation: pulse 2s infinite;
+  /* referring directly to the animation's @keyframe declaration */
+  font-size: 40px;
+}
+
+.create {
+  padding-top: 20px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+/* Clear floats after the header */
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the input */
+input {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  width: 75%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Style the "Add" button */
+.addBtn {
+  padding: 10px;
+  width: 25%;
+  background: #d9d9d9;
+  color: #555;
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border-radius: 5;
+}
+
+.addBtn:hover {
+  background-color: #bbb;
+}
+
+@media (max-width: 668px) {
+  .header {
+    width: 80%;
+  }
+  .ul {
+    width: 80%;
+  }
+}
+/*# sourceMappingURL=Style.css.map */
