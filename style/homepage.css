@@ -2,7 +2,6 @@
   margin: 0%;
   padding: 0%;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  overflow-x: hidden;
 }
 
 .main-container {
@@ -21,8 +20,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 .items {
@@ -32,9 +29,25 @@
 
 .items a {
   text-decoration: none;
-  font-size: 15px;
   color: #010b11;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-top: 20px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .items:nth-child(1) {
@@ -83,7 +96,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 20px;
   cursor: pointer;
   -webkit-animation: fadeIn 10s 1;
           animation: fadeIn 10s 1;
@@ -178,10 +190,13 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 20px;
+    margin-top: 30px;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
   }
   .items:nth-child(1) h1 {
     font-size: 50px;
@@ -189,8 +204,27 @@
   .items:nth-child(1) p {
     font-size: 20px;
   }
-  .items:nth-child(1) .items:nth-child(2) {
-    margin-left: 100px;
+  .items:nth-child(2) {
+    margin-top: 20px;
+    padding-bottom: 20px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .items:nth-child(2) img {
+    border-radius: 10px;
+    height: 400px;
+    width: 300px;
+  }
+  .main-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0%;
   }
 }
 /*# sourceMappingURL=homepage.css.map */
